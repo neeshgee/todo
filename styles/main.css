@@ -60,6 +60,7 @@ button {
   font-style: italic;
   color: black;
   text-decoration: line-through;
+  list-style: none;
 }
 
 li {
