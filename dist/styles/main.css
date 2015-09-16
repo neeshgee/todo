@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Quicksand|Architects+Daughter);
 
 body {
-  background-color: #FF66FF;
+  background-color: black;
+  background-image: url("../styles/notepad-hi.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .container {
   display: flex;
-  border: 2px solid #5F5F5F;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
@@ -21,14 +23,14 @@ h1 {
 }
 .todo {
   display: flex;
-  border: 1px solid #5F5F5F;
+
   text-align: right;
 }
 
 .add {
   padding-top: 40px;
   display: flex;
-  text-align: center;
+  text-align: right;
 }
 
 form {
@@ -39,7 +41,7 @@ label {
 }
 
 .label {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   color: #5F5F5F;
   font-family: 'Quicksand';
@@ -51,11 +53,29 @@ button {
   margin-left: 200px
 }
 #list {
-  list-style: square;
+  list-style: none;
+}
+
+#completelist {
+  font-style: italic;
+  color: black;
+  text-decoration: line-through;
+  list-style: none;
 }
 
 li {
   font-family: 'Quicksand';
   color: #5F5F5F;
   font-size: 16px;
+  text-align: left;
+}
+
+.completed {
+  display: flex;
+
+}
+
+.complete {
+  text-decoration: line-through;
+  color: white;
 }
